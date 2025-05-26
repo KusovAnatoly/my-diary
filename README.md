@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 my-diary
 
-## Getting Started
+**my-diary** — демонстрационное веб-приложение в формате личного дневника, созданное для студентов и начинающих разработчиков. Проект демонстрирует базовую интеграцию **Next.js**, **Tiptap** (rich text editor) и **Chakra UI** для построения современного, адаптивного и удобного пользовательского интерфейса.
 
-First, run the development server:
+## 🎯 Цель проекта
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Показать, как можно быстро создать текстовый редактор на Next.js
+- Научить интеграции редактора Tiptap с React-приложением
+- Продемонстрировать возможности Chakra UI по стилизации и работе с темами
+- Создать основу для собственных заметок, учебного дневника или мини-блога
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Технологии
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js](https://nextjs.org/)** — фреймворк для React с поддержкой SSR, маршрутизации и API-роутов
+- **[Tiptap](https://tiptap.dev/)** — модульный и настраиваемый rich-text editor
+- **[Chakra UI](https://chakra-ui.com/)** — компонентная библиотека для стилизации интерфейса
+- **[TypeScript](https://www.typescriptlang.org/)** — статическая типизация для повышения надёжности
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Быстрый старт
 
-## Learn More
+1. Клонируйте репозиторий:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/KusovAnatoly/my-diary.git
+   cd my-diary
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Установите зависимости:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   # или
+   yarn install
+   ```
 
-## Deploy on Vercel
+3. Запустите приложение в режиме разработки:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   # или
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Перейдите в браузере по адресу: [http://localhost:3000](http://localhost:3000)
+
+## 🔍 Основные функции
+
+- 🌈 Поддержка светлой и тёмной темы (переключатель темы с Chakra UI)
+- ✏️ Текстовый редактор на Tiptap: жирный, курсив, списки, заголовки и т.д.
+- 🗂 Структура, готовая к расширению (категории, теги, экспорт, авторизация)
+- 📦 Простая архитектура и чистый UI, идеально подходит для обучения
+
+## 🧠 Применённые лучшие практики
+
+- **Компонентный подход** с переиспользуемыми блоками (UI, layout, редактор)
+- **Типизированный код** с TypeScript
+- **Адаптивный дизайн** с использованием Chakra UI
+- **Модульная архитектура** и изоляция логики редактора
+- **Использование хуков Chakra (useColorMode)** для темизации
+- Поддержка расширяемости (готовность к интеграции базы данных, авторизации и т.д.)
+
+## 🛤 Планы на будущее
+
+- 🔐 Добавление аутентификации пользователей
+- ☁️ Хранение данных в базе (Supabase / Firebase / SQLite через API)
+- 📅 Привязка записей к календарю
+- 🏷️ Система тегов и фильтрации
+- 📤 Экспорт заметок в Markdown или PDF
